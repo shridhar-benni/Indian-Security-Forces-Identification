@@ -11,7 +11,6 @@ import platform as pt
 
 #function to run inference
 def run_inference_on_images(images_path, model_path, output_path):
-    print(model_path)
     model = YOLO(model_path, task='segment')
 
     # Process each image in the list
@@ -35,8 +34,12 @@ if __name__ == '__main__':
     default_out = ""
     if pt.system() == 'Windows':
         default_in = "..\input_images\\"
-        default_model = "..\models\\yolov8s-seg_full_integer_quant.tflite"
+        default_model = "..\models\\yolov8n-seg.pt"
         default_out = "..\output_images\\"
+    else:
+        default_in = "../input_images/"
+        default_model = "../models/yolov8n-seg.pt"
+        default_out = "../output_images/"
         
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -63,7 +66,4 @@ if __name__ == '__main__':
     output_path = args.out_imgs_path
 
     run_inference_on_images(images_path, model, output_path)
-    print(args.model_file)
-    
-    
-    #print(os.listdir(args.image))
+
