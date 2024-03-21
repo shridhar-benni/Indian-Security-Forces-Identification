@@ -16,4 +16,22 @@ This computer vision project seeks to detect and pinpoint the presence of Indian
   * Type the below command to Clone this repository
 ```sh
 git clone https://github.com/shridhar-benni/Indian-Security-Forces-Identification.git
-```   
+```
+ * Create a virtual environment
+```sh
+python -m venv Indian-Security-Forces-Identification/
+```
+ * Activate virtual environment
+```sh
+python -m venv Indian-Security-Forces-Identification/
+```
+
+ * install ultralytics and tensorflow(for execution of tflite models)  
+```sh
+pip install ultralytics
+pip install tensorflow
+```
+ * Goto scrips folder
+```sh
+cd cd Indian-Security-Forces-Identification/scripts/
+```
