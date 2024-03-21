@@ -33,5 +33,14 @@ pip install tensorflow
 ```
  * Goto scrips folder
 ```sh
-cd cd Indian-Security-Forces-Identification/scripts/
+cd Indian-Security-Forces-Identification/scripts/
+```
+ * Run ISF.py script
+```sh
+python ISF.py
+```
+ * To change input folder, models or ouput folder 
+ * run below command
+```sh
+python ISf.py -i <path to input image folder> -m <path to model> -o < path to output folder>
 ```
